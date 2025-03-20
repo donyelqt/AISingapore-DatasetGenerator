@@ -72,9 +72,9 @@ def generate_confidence_trap():
         "response": f"AWS {service} is actually better because [specific technical reason], despite {wrong_service}'s [misleading feature]."
     }
 
-# Generate 1000 high-impact rows
+# Generate 10,000 high-impact rows
 with open("train.jsonl", "w") as f:
-    for _ in range(1000):
+    for _ in range(10000):
         # 30% trap questions, 30% ASEAN-specific, 20% multi-hop, 20% confidence traps
         if random.random() < 0.3:
             entry = generate_trap_question()
