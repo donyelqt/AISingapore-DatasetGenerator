@@ -33,7 +33,7 @@ def remove_duplicates(input_file, output_file, key_field="instruction"):
 
 # Usage - replace with your actual file paths
 remove_duplicates(
-    input_file="train.jsonl",
-    output_file="trainV2.jsonl",
+    input_file="main.jsonl",
+    output_file="mainV2.jsonl",
     key_field="instruction"  # Change to "output" if needed
 )
