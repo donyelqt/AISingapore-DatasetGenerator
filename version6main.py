@@ -185,7 +185,7 @@ def generate_dataset(num_entries):
 # Generate and save 10,000 entries
 dataset = generate_dataset(10000)
 
-with open("train.jsonl", "w") as f:
+with open("2.jsonl", "w") as f:
     for entry in dataset:
         f.write(json.dumps(entry) + "\n")
 
